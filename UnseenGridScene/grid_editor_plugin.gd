@@ -3,15 +3,20 @@ extends EditorPlugin
 
 var panel: Control
 var grid: GridContainer
+var scroll: ScrollContainer
+var vbox
+
 var cell_size_control: SpinBox
 var jump_to_node_shortcut: Shortcut
 var open_grid: = KEY_F2
-var jump_focused := KEY_U
-var cell_sizer := KEY_5
+var jump_focused := KEY_E
+var cell_sizer := KEY_T
 
 func _enter_tree() -> void:
-	# Create a container for the whole panel
 	var vbox := VBoxContainer.new()
+	vbox.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	vbox.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	vbox.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)  # fill the main screen
 	panel = vbox
 	
 	# Create header with cell size control
@@ -37,9 +42,16 @@ func _enter_tree() -> void:
 	
 	# Create the grid from script
 	var grid_panel_script = load("res://addons/UnseenGridScene/grid_panel.gd")
+	#grid = grid_panel_script.new()
+	#vbox.add_child(grid)
+	
 	grid = grid_panel_script.new()
-	vbox.add_child(grid)
-
+	var scroll := ScrollContainer.new()
+	scroll.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	scroll.add_child(grid)
+	vbox.add_child(scroll)
+	
 	# Listen for scene changes
 	get_editor_interface().get_selection().connect("selection_changed", _on_selection_changed)
 	
