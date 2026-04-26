@@ -6,7 +6,13 @@ https://www.unseen-godot.com/
 
 There are five addons in this project, examine the read me in each to learn more about that specific addon.
 Listed in order of "Crucial" to "Some folks might like it"
+## Usage:
+Add desired addon to your "addons" folder in your project, then in project settings - plugins, activate them
+OR
+Import the zipped project file and save it to a new location, you will have a project with the first three addons enabled by default
+
 ## Addons:
+
 ### GMAP Hotkeys
 Core addon, highly reccomended for all usage with screen readers.
 Adds crucial hotkeys to quickly get to most important parts of editor
