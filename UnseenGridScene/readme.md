@@ -7,9 +7,9 @@ Unseen Grid:
 	Hotkeys:
 		All hotkeys require CTRL held down. Keys can be changed in grid_editor_plugin.gd.
 
-		Ctrl+F2 : Open the Unseen Grid tab
-		Ctrl+U  : Jump to the grid cell of the currently selected node
-		Ctrl+5  : Focus the Cell Size input
+		CTRL+F2 : Open the Unseen Grid tab
+		CTRL+E  : Jump to the grid cell of the currently selected node
+		ALT+T  : Focus the Cell Size input
 
 		Grid cell hotkeys (when a cell is focused):
 			Space     : Select the node at this cell (opens a popup if multiple nodes share the cell)
@@ -18,7 +18,7 @@ Unseen Grid:
 			Ctrl+V    : Paste copied/cut node(s) to this cell's world position
 
 	Features:
-		1. 16x16 grid representing world space, where each cell maps to a region of size Cell Size x Cell Size pixels.
+		1. grid representing world space, where each cell maps to a region of size Cell Size x Cell Size pixels.
 		2. Cells display the names of any Node2D or Control nodes positioned within them.
 		3. Focusing a cell and pressing Space selects that node in the editor. If multiple nodes occupy the cell, a popup lets you pick which one.
 		4. Cut+Paste moves a node to the target cell's world position, with undo/redo support. Copy+Paste duplicates it there instead.
