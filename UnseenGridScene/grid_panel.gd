@@ -1,7 +1,7 @@
 @tool
 extends GridContainer
 
-const GRID_SIZE := 16
+const GRID_SIZE := 64
 var cell_size: int = 16
 
 var cells: Array = []
