@@ -23,6 +23,7 @@ Gmap Hotkeys:
 			Go up tree: Ctrl+U (Goes to first focusable control node of a UI element, if already on that node, attempts to go to first focusable UI element of the parent)
 			Get focus: Ctrl+0 (Prints in output TAB information on what is focused)
 			Move audio bus: Ctrl + . (Moves the focused audio bus forward one spot, or to front if already last.)
+			Toggle 2D scene editor: Ctrl+F6 (It's off by default, I promise this is off for a reason, but it's good for if working with others.)
 	Focus Changes:
 		1. VBOX and HBOX containers get a script that makes it whenever they are focused, each item is hard focused so each item is neighbor of next sibling in list.
 			1.1 registers these scripts as GmVBoxContainer and GmHBoxContainer so can be selected as items.
