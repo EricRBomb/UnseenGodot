@@ -17,6 +17,7 @@ var menu_bar = KEY_6
 var open_scene_tabs = KEY_7
 var import_tab = KEY_8
 var focus_method_list = KEY_9
+var toggle_2d = KEY_F6
 
 #Goes to create script button, or script of focused scene
 var find_script = KEY_EQUAL
@@ -44,6 +45,8 @@ var editor_settings = EditorInterface.get_editor_settings()
 const HBoxFocusFixer = preload("res://addons/gmap_hotkeys/focus fixer/h_box_focus_fixer.gd")
 const VBoxFocusFixer = preload("res://addons/gmap_hotkeys/focus fixer/v_box_focus_fixer.gd")
 
+
+var scene_editor_disabled =[]
 var focus_remove_list = [] #array of nodes that we disable focus for
 
 #playing error noises!
@@ -174,6 +177,9 @@ func _unhandled_input(event: InputEvent) -> void:
 	# Bus forward (ctrl + period by default)
 	elif event.keycode == bus_forward_key and ctrl and not bus_moved:
 		bus_forward()
+	
+	elif event.keycode == toggle_2d and ctrl:
+		toggle_scene_editor()
 
 #1
 func goto_scene_tree():
@@ -279,7 +285,27 @@ func goto_script_of_selected_scene():
 		var button = scene_bar.get_child(0)
 		if button.visible == true:
 			button.get_child(3).grab_focus()
-		
+			
+func toggle_scene_editor():
+	var root = get_node("/root")
+	var viewer2d = root.find_children("*CanvasItemEditorViewport*","",true,false)
+	for t in scene_editor_disabled:
+		if t.visible == true:
+			t.visible = false
+			for i in viewer2d:
+				i.focus_mode = 1
+			print("disabled")
+		else:
+			print("Enabled")
+			t.visible = true
+			for i in viewer2d:
+				i.focus_mode = 2
+	
+	for i in viewer2d:
+		if i.focus_mode == 1:
+			i.focus_mode = 2
+		else:
+			i.focus_mode = 1
 func bus_changer():#makes volume slider accessible and add effect menu selectable
 	if focused != null:
 		if focused.get_class() == 'VSlider':
@@ -376,11 +402,15 @@ func error_runtime_check():
 		if error_runtime.text != "" and error_runtime.text != "Debug session closed."and error_runtime.text != "Debug session started.":
 			gmap_alert.stream = ALERTSFX
 			gmap_alert.play()
-			
+
+
+
 func focus_remover():
 	#disabling 2d canvas editor
 	for t in EditorInterface.get_editor_main_screen().find_children("*CanvasItemEditorViewport*","",true,false):
 		t.visible =false
+		scene_editor_disabled.append(t)
+		
 	focus_remove_list = ["SplitContainerDragger","CanvasItemEditorViewport","VScrollBar","HScrollBar"]
 	var root = get_node("/root")
 	#some nodes can have focus that we can not want to ever have focus via keyboard
