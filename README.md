@@ -9,7 +9,7 @@ Listed in order of "Crucial" to "Some folks might like it"
 ## Usage:
 Add desired addon to your "addons" folder in your project, then in project settings - plugins, activate them
 OR
-Import the zipped project file and save it to a new location, you will have a project with the first three addons enabled by default
+Import the zipped project file and save it to a new location, you will have a project with the first 4 addons enabled by default
 
 ## Addons:
 
@@ -27,6 +27,9 @@ Just trust it's miserable to interact with the scene tree at all without it.
 Since the 2D scene editor is not accessible, creates a new window that allows editing of scenes in a spread sheet style allowing you to move them around. 
 Does not allow editing of TileMap layers, but does report if a tile is detected in your space, and tells you if collision or not is enabled.
 Not strictly needed, as through code and setting of control nodes as children you can make almost any game, but certain games this will be much nicer.
+
+### Unseen Inspector
+Reorganizes insepctor and adds commands on CTLR Left/Up/Right to make navigating it eaiser 
 
 ### Step Logger
 When active, logs actions in rawlogs.txt, for reporting of issues/trouble shooting, and guide making. 
