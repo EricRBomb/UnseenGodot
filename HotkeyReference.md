@@ -1,4 +1,4 @@
-#KEY TASKS:
+# KEY TASKS:
 
 Find ERROR!
 When editing code and you hear an alert, you can use the following hotkey to jump to text of error.
@@ -19,7 +19,7 @@ Ctrl + = (equal sign)
 
 # Important Default Godot Hotkeys
 
-##Main screen movement
+## Main screen movement
 Open help files: F1
 
 Open 2D editor: Ctrl+f1
@@ -29,7 +29,9 @@ Open Unseen Seen Scene editor: Ctrl+f2 (replaces 3D editor)
 Open script editor: ctrl+f3
 
 Go to search bar of file systems: Ctrl alt + p 
-##Change selected scene/file
+
+Edit/stop editing Item: Most editable items (text fields, spin boxes, renaming items) you toggle ability to edit on and off with Enter.
+## Change selected scene/file
 
 If multiple scenes are open, move to next one: Ctrl + tab 
 If multiple scenes are open, move to previous one: Ctrl + shift + tab 
@@ -80,7 +82,10 @@ Press GMAP_CTRL + other key to use hotkey (Can be changed easily by editing vari
 		Ctrl+C    : Copy the node(s) at this cell
 		Ctrl+X    : Cut the node(s) at this cell
 		Ctrl+V    : Paste copied/cut node(s) to this cell's world position
-
+# Unseen Inspector
+CTRL + Left: goes to first focusable parent in inspector of current node
+CTRL + Down: Goes to next item of the same type you are focused on. 
+Ctrl + up: Goes to previous item of the same type you are foucsed on.
 # Step logger
 Step logger is disabled by default in template project
 CTRL+D enables "tutorial" mode, which logs steps taken instead of just every press
