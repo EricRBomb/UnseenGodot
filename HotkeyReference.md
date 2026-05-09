@@ -1,16 +1,13 @@
 # KEY TASKS:
 
-Find ERROR!
-When editing code and you hear an alert, you can use the following hotkey to jump to text of error.
-
-Creating a Scene
+## Creating a Scene
 ctrl+1 (If not in scene tab yet)
 Ctrl+N (Go to new scene tab)
 Ctrl+A (opens node menu)
 Can now pick the "root" node of the scene, starting in a text box to do searchs, press enter to create it once proper one is picked.
 Press enter right after creating, to rename it.
 
-Create/attach script:
+## Create/attach script:
 Ctrl+f1 to go to scene tab
 Down until node you want to attach script to is highlighted
 Ctrl + = (equal sign)
