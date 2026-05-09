@@ -17,72 +17,70 @@ Ctrl + = (equal sign)
 # Important Default Godot Hotkeys
 
 ## Main screen movement
-Open help files: F1
+* Open help files: F1
 
-Open 2D editor: Ctrl+f1
+* Open 2D editor: Ctrl+f1
 
-Open Unseen Seen Scene editor: Ctrl+f2 (replaces 3D editor)
+* Open Unseen Seen Scene editor: Ctrl+f2 (replaces 3D editor)
 
-Open script editor: ctrl+f3
+* Open script editor: ctrl+f3
 
-Go to search bar of file systems: Ctrl alt + p 
+* Go to search bar of file systems: Ctrl alt + p 
 
 Edit/stop editing Item: Most editable items (text fields, spin boxes, renaming items) you toggle ability to edit on and off with Enter.
 ## Change selected scene/file
 
-If multiple scenes are open, move to next one: Ctrl + tab 
-If multiple scenes are open, move to previous one: Ctrl + shift + tab 
+* If multiple scenes are open, move to next one: Ctrl + tab 
+* If multiple scenes are open, move to previous one: Ctrl + shift + tab 
 
-Open full scenes list to be picked and opened: Ctrl + O
+* Open full scenes list to be picked and opened: Ctrl + O
 
-Quick select scene: Ctrl+shift+o
-Quick open script: ctrl+alt+o
-Search all files: ctrl+p
+* Quick select scene: Ctrl+shift+o
+* Quick open script: ctrl+alt+o
+* Search all files: ctrl+p
 
+* Go to search bar of active module if there is one: Ctrl+f
 
-Go to search bar of active module if there is one: Ctrl+f
-
-Open quick open menu: Shift + alt + o
-Open quick pick scene list: Ctrl + shift + o
-Open quick pick script list: Ctrl + alt + o
-Open function search for script: ctrl + alt + f
+* Open quick open menu: Shift + alt + o
+* Open quick pick scene list: Ctrl + shift + o
+* Open quick pick script list: Ctrl + alt + o
+* Open function search for script: ctrl + alt + f
 
 ## Running project
-Run current Scene: F6
-Run project: F5
-
-stop running project: f8
+* Run current Scene: F6
+* Run project: F5
+* stop running project: f8
 
 # GMAP hotkeys:
 
 Press GMAP_CTRL + other key to use hotkey (Can be changed easily by editing variables in script)
-		Goto Scene Tree : CTRL+1
-		Goto Inspector : CTRL+2
-		Goto Godot File System : CTRL+3
-		Goto Bottom Panel Tabs : Ctrl+4 - (Output, Debugger,Audio, Animation, Shader Editor, and search Results are accessed from these tabs)
-		Goto Signals Tab : Ctrl + 5
-		Goto menu bar : Ctrl + 6 - (Scene, Project, Debug, Editor, and help are all located here)
-		Goto open scene tab bar : Ctrl + 7 (lists all open scenes)
-		Goto Import tab: Ctrl + 8
-		Goto Method list: Ctrl + 9 (Lists all methods in currently open script in editor)
+		* Goto Scene Tree : CTRL+1
+		* Goto Inspector : CTRL+2
+		* Goto Godot File System : CTRL+3
+		* Goto Bottom Panel Tabs : Ctrl+4 - (Output, Debugger,Audio, Animation, Shader Editor, and search Results are accessed from these tabs)
+		* Goto Signals Tab : Ctrl + 5
+		* Goto menu bar : Ctrl + 6 - (Scene, Project, Debug, Editor, and help are all located here)
+		* Goto open scene tab bar : Ctrl + 7 (lists all open scenes)
+		* Goto Import tab: Ctrl + 8
+		* Goto Method list: Ctrl + 9 (Lists all methods in currently open script in editor)
 
 # Unseen Scene Editor Hotkeys
 
 	All hotkeys require CTRL held down. Keys can be changed in grid_editor_plugin.gd.
 
-	CTRL+F2 : Open the Unseen Grid tab
-	CTRL+E  : Jump to the grid cell of the currently selected node
-	ALT+T  : Focus the Cell Size input
+	* CTRL+F2 : Open the Unseen Grid tab
+	* CTRL+E  : Jump to the grid cell of the currently selected node
+	* ALT+T  : Focus the Cell Size input
 
 	Grid cell hotkeys (when a cell is focused):
-		Space     : Select the node at this cell (opens a popup if multiple nodes share the cell)
-		Ctrl+C    : Copy the node(s) at this cell
-		Ctrl+X    : Cut the node(s) at this cell
-		Ctrl+V    : Paste copied/cut node(s) to this cell's world position
+		* Space     : Select the node at this cell (opens a popup if multiple nodes share the cell)
+		* Ctrl+C    : Copy the node(s) at this cell
+		* Ctrl+X    : Cut the node(s) at this cell
+		* Ctrl+V    : Paste copied/cut node(s) to this cell's world position
 # Unseen Inspector
-CTRL + Left: goes to first focusable parent in inspector of current node
-CTRL + Down: Goes to next item of the same type you are focused on. 
-Ctrl + up: Goes to previous item of the same type you are foucsed on.
+* CTRL + Left: goes to first focusable parent in inspector of current node
+* CTRL + Down: Goes to next item of the same type you are focused on. 
+* Ctrl + up: Goes to previous item of the same type you are foucsed on.
 # Step logger
-Step logger is disabled by default in template project
-CTRL+D enables "tutorial" mode, which logs steps taken instead of just every press
+* Step logger is disabled by default in template project
+* CTRL+D enables "tutorial" mode, which logs steps taken instead of just every press
