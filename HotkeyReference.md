@@ -8,7 +8,7 @@ Can now pick the "root" node of the scene, starting in a text box to do searchs,
 Press enter right after creating, to rename it.
 
 ## Create/attach script:
-Ctrl+f1 to go to scene tab
+Ctrl+1 to go to scene tab
 Down until node you want to attach script to is highlighted
 Ctrl + = (equal sign)
 
