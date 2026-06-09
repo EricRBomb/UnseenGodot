@@ -23,10 +23,9 @@ Add new debug accessibilty features
 Modifies accessibility lables of items in trees to tell you what level it is at, and if it's exapnded or not if it has children so don't have to guess if the node you are focused on is a a child of the root node or another node.
 Just trust it's miserable to interact with the scene tree at all without it.
 
-### Unseen Grid Scene editor
-Since the 2D scene editor is not accessible, creates a new window that allows editing of scenes in a spread sheet style allowing you to move them around. 
-Does not allow editing of TileMap layers, but does report if a tile is detected in your space, and tells you if collision or not is enabled.
-Not strictly needed, as through code and setting of control nodes as children you can make almost any game, but certain games this will be much nicer.
+### Unseen Scene editor
+Since the 2D scene editor is not accessible, creates a new window that allows editing of scenes in a spread sheet style using a cursor of variable size.
+So you are told what your cursor is over as you move it around.
 
 ### Unseen Inspector
 Reorganizes insepctor and adds commands on CTLR Left/Up/Right to make navigating it eaiser 
